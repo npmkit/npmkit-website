@@ -1,0 +1,49 @@
+{
+  "name": "npmkit.app",
+  "version": "1.0.0",
+  "description": "Website for npmkit app",
+  "main": "./pages/index.js",
+  "repository": "https://github.com/sergeybekrin/npmkit.app",
+  "author": "Sergey Bekrin <sergey@bekrin.me> https://bekrin.me",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "preexport": "yarn build",
+    "export": "next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^6.1.1",
+    "node-fetch": "^2.1.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "styled-components": "^3.3.3",
+    "system-font-css": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
+    "raw-loader": "^0.5.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "proseWrap": "always",
+    "trailingComma": "all"
+  },
+  "babel": {
+    "presets": [
+      "next/babel"
+    ],
+    "plugins": [
+      [
+        "styled-components",
+        {
+          "ssr": true,
+          "displayName": true,
+          "preprocess": false
+        }
+      ]
+    ]
+  }
+}
