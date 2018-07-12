@@ -9,9 +9,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "preexport": "yarn build",
-    "export": "next export",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
@@ -45,5 +43,11 @@
         }
       ]
     ]
+  },
+  "now": {
+    "alias": "npmkit.app",
+    "static": {
+      "public": "out"
+    }
   }
 }
