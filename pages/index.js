@@ -131,7 +131,7 @@ class IndexPage extends Component {
                 Extend it with <Em>plugins</Em>
               </Feature>
             </List>
-            <Flex alignItems="center" justifyContent="center" margin="2rem 0">
+            <Flex alignItems="center" margin="2rem 0">
               <Link href={release.download} primary>
                 Download npmkit {release.version}
               </Link>

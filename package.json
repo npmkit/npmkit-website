@@ -9,8 +9,9 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "next build",
+    "postbuild": "next export",
+    "start": "serve ./out"
   },
   "dependencies": {
     "next": "^6.1.1",
@@ -22,7 +23,8 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.5.1",
-    "raw-loader": "^0.5.1"
+    "raw-loader": "^0.5.1",
+    "serve": "^9.2.0"
   },
   "prettier": {
     "singleQuote": true,
@@ -43,11 +45,5 @@
         }
       ]
     ]
-  },
-  "now": {
-    "alias": "npmkit.app",
-    "static": {
-      "public": "out"
-    }
   }
 }
