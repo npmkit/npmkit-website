@@ -1,3 +1,6 @@
 {
-  "alias": "npmkit.app"
+  "alias": "npmkit.app",
+  "env": {
+    "GITHUB_TOKEN": "@github-token"
+  }
 }
