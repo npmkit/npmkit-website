@@ -95,7 +95,7 @@ class CustomApp extends App {
               </Link>
             </Left>
             <Right>
-              <Link href="https://github.com/npmkit/npmkit.app">
+              <Link href="https://github.com/npmkit/npmkit-website">
                 View source
               </Link>
             </Right>

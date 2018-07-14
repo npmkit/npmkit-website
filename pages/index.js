@@ -20,10 +20,10 @@ const Headline = styled(Heading)`
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
   max-width: 25rem;
-  margin: 1.25rem 0;
+  margin: 1rem 0;
   color: #222;
 `;
 
@@ -53,7 +53,6 @@ const List = Paragraph.withComponent('ul').extend`
   list-style: none;
   font-size: 1.25rem;
   padding: 0 0 0 1.5rem;
-  margin: 0.5rem 0;
 
   ${Feature}:not(:last-of-type) {
     margin-bottom: 0.5rem;
@@ -111,8 +110,8 @@ class IndexPage extends Component {
           >
             <Headline>Reach your local projects faster</Headline>
             <Paragraph>
-              <Em>npmkit</Em> is an open source tray app for quick access and
-              managment of your local packages, both for <Em>npm and yarn</Em>.
+              <Em>npmkit</Em> is a tray app for quick access to your local
+              packages, both npm and yarn.
             </Paragraph>
             <List>
               <Feature Emoji="🔍">
@@ -131,7 +130,7 @@ class IndexPage extends Component {
                 Extend it with <Em>plugins</Em>
               </Feature>
             </List>
-            <Flex alignItems="center" margin="2rem 0">
+            <Flex alignItems="center" margin="1rem 0">
               <Link href={release.download} primary>
                 Download npmkit {release.version}
               </Link>
