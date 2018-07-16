@@ -1,6 +1,5 @@
 {
   "alias": "npmkit.app",
-  "env": {
-    "GITHUB_TOKEN": "@github-token"
-  }
+  "type": "static",
+  "public": true
 }

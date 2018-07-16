@@ -1,6 +1,8 @@
 node_modules/
 .vscode/
 .next/
+public/
+out/
 .env
 *.log
 .DS_Store
