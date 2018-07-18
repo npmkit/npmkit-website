@@ -95,50 +95,45 @@ class IndexPage extends Component {
   render() {
     const { release } = this.props;
     return (
-      <React.Fragment>
-        <Head>
-          <title>npmkit – Quick access to all your projects</title>
-        </Head>
-        <MainSection direction="row">
-          <Flex
-            backgroundImage="url('/static/preview.png')"
-            backgroundRepeat="no-repeat"
-            backgroundSize="432px 512px"
-            backgroundPosition="100% -25px"
-            flexDirection="column"
-            flex="1"
-          >
-            <Headline>Reach your local projects faster</Headline>
-            <Paragraph>
-              <Em>npmkit</Em> is a tray app for quick access to your local
-              packages, both npm and yarn.
-            </Paragraph>
-            <List>
-              <Feature Emoji="🔍">
-                Find your projects with <Em>fuzzy search</Em>, by identicons or{' '}
-                <Em>pin it</Em> on top
-              </Feature>
-              <Feature Emoji="🛠">
-                <Em>Open it</Em> in your favorite editor, terminal or reveal in
-                Finder
-              </Feature>
-              <Feature Emoji="⏯">
-                Run <Em>background scripts</Em> with an indicator and status
-                notifications
-              </Feature>
-              <Feature Emoji="📦">
-                Extend it with <Em>plugins</Em>
-              </Feature>
-            </List>
-            <Flex alignItems="center" margin="1rem 0">
-              <Link href={release.download} primary>
-                Download npmkit {release.version}
-              </Link>
-              <Note>for macOS 10.9+</Note>
-            </Flex>
+      <MainSection direction="row">
+        <Flex
+          backgroundImage="url('/static/preview.png')"
+          backgroundRepeat="no-repeat"
+          backgroundSize="432px 512px"
+          backgroundPosition="100% -25px"
+          flexDirection="column"
+          flex="1"
+        >
+          <Headline>Reach your local projects faster</Headline>
+          <Paragraph>
+            <Em>npmkit</Em> is a tray app for quick access to your local
+            packages, both npm and yarn.
+          </Paragraph>
+          <List>
+            <Feature Emoji="🔍">
+              Find your projects with <Em>fuzzy search</Em>, by identicons or{' '}
+              <Em>pin it</Em> on top
+            </Feature>
+            <Feature Emoji="🛠">
+              <Em>Open it</Em> in your favorite editor, terminal or reveal in
+              Finder
+            </Feature>
+            <Feature Emoji="⏯">
+              Run <Em>background scripts</Em> with an indicator and status
+              notifications
+            </Feature>
+            <Feature Emoji="📦">
+              Extend it with <Em>plugins</Em>
+            </Feature>
+          </List>
+          <Flex alignItems="center" margin="1rem 0">
+            <Link href={release.download} primary>
+              Download npmkit {release.version}
+            </Link>
+            <Note>for macOS 10.9+</Note>
           </Flex>
-        </MainSection>
-      </React.Fragment>
+        </Flex>
+      </MainSection>
     );
   }
 }
