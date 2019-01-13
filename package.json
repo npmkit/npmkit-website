@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Website for npmkit app",
   "main": "./pages/index.js",
-  "repository": "https://github.com/sergeybekrin/npmkit.app",
+  "repository": "https://github.com/sbekrin/npmkit.app",
   "homepage": "https://npmkit.app",
   "author": "Sergey Bekrin <sergey@bekrin.me> https://bekrin.me",
   "license": "MIT",

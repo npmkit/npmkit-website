@@ -88,8 +88,7 @@ class CustomApp extends App {
           <Footer>
             <Left>
               Made by{' '}
-              <Link href="https://github.com/sergeybekrin">Sergey Bekrin</Link>{' '}
-              and{' '}
+              <Link href="https://github.com/sbekrin">Sergey Bekrin</Link> and{' '}
               <Link href="https://github.com/npmkit/npmkit/graphs/contributors">
                 contributors
               </Link>
