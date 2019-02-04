@@ -27,7 +27,7 @@ const Paragraph = styled.p`
   color: #222;
 `;
 
-const MainSection = Section.extend`
+const MainSection = styled(Section)`
   min-height: 512px;
 `;
 
@@ -49,7 +49,7 @@ const Feature = styled.li`
   }
 `;
 
-const List = Paragraph.withComponent('ul').extend`
+const List = styled(Paragraph).attrs({ as: 'ul' })`
   list-style: none;
   font-size: 1.25rem;
   padding: 0 0 0 1.5rem;

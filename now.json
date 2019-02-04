@@ -1,5 +1,5 @@
 {
+  "version": 2,
   "alias": "npmkit.app",
-  "type": "static",
-  "public": true
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }]
 }

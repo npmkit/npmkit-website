@@ -1,9 +1,4 @@
 module.exports = {
-  exportPathMap() {
-    return {
-      '/': { page: '/' },
-    };
-  },
   webpack(config) {
     // Allow to import `system-font-css` as a raw string
     config.module.rules.push({

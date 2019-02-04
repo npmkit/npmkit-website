@@ -1,11 +1,11 @@
 import React from 'react';
 import App, { Container } from 'next/app';
-import styled, { injectGlobal } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import systemFont from 'system-font-css';
 import Logo from './components/logo';
 import Link from './components/link';
 
-injectGlobal`
+const GlobalStyles = createGlobalStyle`
   ${systemFont}
 
   :root {
@@ -67,6 +67,7 @@ class CustomApp extends App {
       <Container>
         <Layout>
           <Header>
+            <GlobalStyles />
             <Left>
               <Logo />
             </Left>
